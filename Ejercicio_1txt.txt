@@ -1,0 +1,32 @@
+Curso de Linux
+
+> sh
+Shell - CLI Interpreter
+
+Comandos : Primera parte
+
+~$ : "promp" Esto se significa que el sistema espera instrucciones para su ejecucion de instruciones validas.
+
+df - h |Comandos con argumento| : Mostrar las configuraciones actualuales del sistemas
+
+who |Comandos sin argumento|: Devuelve el usuario actual del sistema, ademas del metodo de conexion y la fecha de hora del sistema.
+
+clear : Limpia el terminal en linux.
+date : Devuelve la fecha del sistema
+ctrl + c: Cancela un comando y termina la ejecucion
+ping (mas la web ej www.google.com): Permite realizar ping(Esto se significa que compruyeba si es posible que el equipo o servidor sea accesible, es una herramienta muy util para diagnosticar un problema de red) en una web.
+ls : Comando que nos devuelve un listado de nuestra actual ubicacion en el sistema, nos devuelve una lista de nuestras ubicaciones.
+cd : Nos permite acceder a la ubicacion en general, nos sirve mayormente tras un ls para acceder a una ubicacion en concreto.
+cd .. :Ns permite retroceder antes de entrar a la carpeta previamente accedida
+
+su - : Nos perimte acceder al ususario root: es Aquel usuario con todos los privilegios del sistema. Cabe destacar que debemos recordar la clave de administrador que le ortorgamos al sistema en su instalacion.
+apt : Gestor de descarga de linux 
+apt search "paquete": utiliza el servicio de busqueda de linux con el paquete en cuestion que nosotros buscamos.
+apt install "paquete": Lo utilizamos para instalar el paquete en cuestion 
+
+-> Comandos con privillegios del sistema.
+free -m: Nos permite ver la memoria total disponible del sistema.
+top: nos permite ver todos los procesos activos del sistema y tambien la utilizacion de sus recursos.
+htop: Nos permite ver nuestros procesos con mas detalles en el sistema (Requiere instalacion del paquete parasu vision).
+
+
