@@ -1,0 +1,20 @@
+Ejercicio_4
+
+Metacaracteres:
+
+cd /usr/bin
+
+* : para enmarcar un todo osea "ls b*" nos lista todos los archivos que comienzan con la "b" recordar que linux es Case sensitive. Con "ls *b" son los que terminen con "b", Tambien esta definicion es para ls *ma* funciona como el "like" de base de datostrayendo todos los archivo que contengan ma en su nombre. En este case "ls *m*p*" trae todos los archivos que contengan una m o una p en su nombre.
+
+?: cuandose usa con ls nos devele aquellos ficheros que comiencen con la determinada letra y los digitos ingresados, es decir "ls g?" deveuelve noibre de ficheros de dos digitos de cualquier caracre proseguido a esa g. en el caso que se ejecute "ls g??" devolvera aquellos nombre de 3 digitos que comiencen con g. Lo mismo de manera la regla invertida se aplica lo mismo 
+
+[]: En caso de utilizarlo de esta manera "ls [af]*" funciona trayendo nombres que contengan a o f en el inicio de los mismos. Lo mismo aplica a la inversa "ls *[af]". Tambien aplica con digitos ejemplo ls g*[0-9][0-9] con dos digitosde numeros en este ejemplo.
+los 9 caracteres son seguidos con "ls -l" son para los permisos.
+
+d: Denominado para ficheros de tipo directorio
+-: ficheros normales
+l: Denominados para ficheros de tipo acceso directos
+b: Denominado para ficheros de tipo bloque
+c: Denominado para ficheros de tipo o una pantalla
+
+file "loquequieras": sirve para describir el archivo en cuestion

@@ -1,0 +1,20 @@
+Ejercicio_5
+
+Comandos parte cuatro - mkdir, cat, touch, cp.
+mkdir: (make dir) Permite crear directorios, o llamadas tambien carpetas por ejemplo si se tipea "mkdir carpeta01" se crea una carpeta con el nombre "carpeta01".
+mkdir "/home/user/carpeta2" con la posicion absoluta o pocisionado en el directorio de trabajo del usuario mkdir "carpeta2" de manera relativa. con la sintaxis mkdir -v "carpeta03" nos informa que creo una carpeta. para crear subdirectorios.
+mkdir -p dir1/dir2: creara un directorio dentro de otro.
+
+touch: crea un fichero... Si el fichero no existe lo crea y si existe le modifica la fecha de modificacion.
+
+echo "loquesea": se limita a mandar informacion por pantalla lo que sea. se puede aplicar con echo "prueba" > f1.txt que es un txt. que sirve paraalmacer la palabra prueba...
+
+cat: sirve para leer el archivo creado y devuelve su contenido
+
+cp: cp "origen" "destino" comando que permite copiar ficheros, desde el "origen" al "destino".
+con cp -i f1.txt f2.txt: si bien creaarchivo per en caso de haber archivos iguales pregunta si desea sobreescribir. tambien es posible copiar directorios pero con las regla de:  
+cp -r dir3 dir6 : alli ya se podrian copiar directorios tal cual son.
+
+
+ 
+ 
