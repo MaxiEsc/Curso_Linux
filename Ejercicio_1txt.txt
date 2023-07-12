@@ -16,7 +16,8 @@ date : Devuelve la fecha del sistema
 ctrl + c: Cancela un comando y termina la ejecucion
 ping (mas la web ej www.google.com): Permite realizar ping(Esto se significa que compruyeba si es posible que el equipo o servidor sea accesible, es una herramienta muy util para diagnosticar un problema de red) en una web.
 ls : Comando que nos devuelve un listado de nuestra actual ubicacion en el sistema, nos devuelve una lista de nuestras ubicaciones.
-cd : Nos permite acceder a la ubicacion en general, nos sirve mayormente tras un ls para acceder a una ubicacion en concreto.
+cd : (Change Directory) Nos permite acceder a la ubicacion en general osea si se ingresa con / es decir, "cd /" nos lleva a la raiz /home. Si se ingresa "cd " nos devuelve a la ruta de trabajo, /home/tuUsuario.
+Nos sirve mayormente tras un ls para acceder a una ubicacion en concreto.
 cd .. :Ns permite retroceder antes de entrar a la carpeta previamente accedida
 
 su - : Nos perimte acceder al ususario root: es Aquel usuario con todos los privilegios del sistema. Cabe destacar que debemos recordar la clave de administrador que le ortorgamos al sistema en su instalacion.

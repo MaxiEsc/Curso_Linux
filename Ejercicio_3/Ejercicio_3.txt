@@ -1,0 +1,18 @@
+Ejercicio_3
+.Comandos segunda parte
+pwt: Sirve para enviarnos informacion, para mostrarno en coonsola donde nos encontramo0s en el directorio
+ls -l: presenta lamisma funcion que el ls basico solo que aqui nos detalla todo literalmente
+ls -a: muestra los directorios ocultos
+ls -al. muestra los ficheros ocultos los ficheros normales copnun agran cantidad de detalles.
+ls -alh: lo mismo que el anterior pero mas legible con los humanos 
+ls -lr:  lista en orden alfabetico inverso
+ls -ls: orden de los ficheros por tamaño
+ls -lsh: lo mismo que el anterior pero en este caso  por orden alfabetico
+ls -l "/tmp": en este caso se le ha pedido que liste el contenido de "tmp"
+ls -lt: orden de los ficheros por fecha
+ls -ltr: orden de los ficheros por fecha del mas viejo al mas nuevo
+Siempre se pueden acceder a las rutas absolutas
+
+man: Comando de muchisima atyuda de linux para manejar el shell, si lo colocamos preseguido de un comandop con el cual quieramos saber usar nos dara la documentacion de ese comoando en cuestion  ejemplo: "man pwd". nos dara toda la documentacion de pwd.
+
+en linux si no se quiere visibilidad en elun fichero basta colocarlo con un punto osea "/home/tuusuario/.carpetaOculta"
