@@ -1,0 +1,19 @@
+Ejercicio_2 
+EDITORES - FICHEROS - USUARIOS 
+Script: Fichero de texto que contiene comandos UNIX/LINUX, este es interpretado por shell
+Tipos de Usuario en Linux
+.Usuarios Root o administrador : Usaurio administrador del sistema con todos los privilegio totales del mismo. Su HOME es normalmente /root.Tiene de identificador 0.No se recomienda trabajar con este usuario, para tareas de administracion o de gestion de sistema.
+Acceden mediante password. su prompt suyele ser una #
+.Usuarios normales o de trabajo: Usuario con el que normalemente se trabaja en linux, se los suele crear desde el usurio root. su directorio HOME suele der /home, osea supongamos que se le asigna a un ususario el espacion de trabajo /home/curso.
+Suelen tener un identificador de ususario sperior de 500 a 1000, dependiendo de la distribucion de linux. Su prompt suele ser el famoso $. Debe acceder con password.
+.Usuarios especiales o de sistema: Usuarios especiales que se utilizan para ejecutar impresoras o demas dispositivos, Sirven para ejecutar diversos procesos del sistema, Ejemplos: bin, daemon, adm, ip, sync, shutdown, maill, operator, squid, apache, etc.
+son tambien conocidas como cuentas del sistema, depenmdiendo de la cuenta asumen distintos privilegios del sistema del root. no pueden Iniciar seción con las mismas, por lo tanto no necesitan contraseña. Se las conoce como cuenta de "no inicio de session (nologin)".
+Se crean (normalmente) automaticamente, al momento de la instalacion de linux o de la aplicacion.
+Generalmente se les asigna un UID entre 1 y 100.
+
+Conceptos - Ficheros
+En este caso es considerada la forma en la que los datos se guardan en linux, a difrencia de las particicones de windows en linux se usan de otra manera... Todo empieza de una unica manera con /. por lo que no importa cuantos discos tenga lo que impoirta es que todo tenga un principio, por lo que un segundo HDD puede estar asignado a un directorio como /dir/hdd, muy distinto a windows que seria como C:/ y D:/... ventajas es solo hay un estructura nunca puede ser confusa. desventaja para un usuario normal no sabe donde carajo se encuentra de manera fisica en el hdd. Puede llegar a pasar que un mismo archivo de carpetas este en la mitad de un disco y la mitad en el otro
+Miestras que los ficheros en windows son : C:\Windows\System\notepad.exe
+En Linux seria : /home/ususario/carpeta/archivo.sh
+ 
+
