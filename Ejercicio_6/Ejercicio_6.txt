@@ -1,0 +1,11 @@
+Ejercicio_6
+
+Comandos - Parte cinco - mv, rm, rmdir, cat
+
+mv : mv "archivo" "ruta". Sirve para mover o incluso renombrar. con lo de renombrar hace referencia a la nomeclatura Ejemplo: mv f3 /carpeta01/f3.txt. Si se quiere mover mas de un archivo en lo posible de un mismo nombre se utiliza el metacaracter "*".
+rm : rm "file"-> Cabe destacar que para remover o escribir archivos se debe tener los permisos necesarios!!. Se puede eliminar un unico archivo o muchos dependiendo del metacaracter para este ultimo caso y que el sistema interrogue sobre la accion.
+rmdir "dir": Elimina un directorio... pero este debe estar vacio... en caso de no estarlo limpiar el directorio deseado con por ejemplo: rm /home/tuUsuario/dir/* o rm -r "dir"
+
+hazaña interezante!!  tipeamos una ayuda con man y con ">" se la asignamos a un archivo
+
+cat: es para la apertura de los archivos lo recordamos

@@ -1,0 +1,14 @@
+Ejercicio_7
+
+Comandos - Parte seis -  tail, less, tree 
+
+tail "file": Este comando nos permite ver las ultimas 10 lineas de un archivo... Que utilidad tiene y bueno supongamos quetendriamos queller un log este comando nos vien que ni pintado...
+Podemos alterarlo con tail -n 20 "file" con 20 lineas o las que querramos. Con tail -f "file", nos el archivo queda abierto y esperando... es perfecto para ver un log auto-actualizable.
+
+head "file": de la misma manera pero a la inversa se nos presenta head. para ver las primera 10 lineas del archivo. De la misma estructura tenemos tail -n 20 "file" con las primera 20 lineas o lo cambiamos por algo que querramos.
+
+less: Con el comando less permite la lectura de un archivo linea por linea, por lo que es para una lectura mas atenta
+
+tree: (Normalmente se debe instalar con ussuario root : ~$su -, apt-get install tree para salir exit y listo)comando que permite la vista jerarquica de todo el sistema con sus carpetas.
+
+who: bueno es para averiguar el usuario presente en este momento
