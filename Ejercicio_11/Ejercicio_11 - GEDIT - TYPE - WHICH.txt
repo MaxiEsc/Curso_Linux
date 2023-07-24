@@ -1,0 +1,17 @@
+Ejercicio_11 - GEDIT - TYPE - WHICH - WHEREIS
+
+GEDIT, TYPE, WHICH, WHEREIS
+
+gedit: Comando que permite la apaertura de un gestor de texto como el notepad de windows, como siempre con el comando cat permite la apertura y lectura del archivo creado con gedit
+por ejemplo si se quiere crear un archivo de texto con gedit se realiza con gedit ejemplo.txt y se crea en el directorio pdonde nos encontremos. por lo que sabemos.
+
+Diferencia de comando internos y comandos externos:
+Comandos internos: Comando que no posee un ejecutable propiamente, si no que se encuentra integrado en la shell de linux ejemplo ps. Con help podemos ver y obtener informacion de todos los comando internos de la shell de linux. Estos comnados tambien son considerados de tipo build-in.
+
+Comandos externos: Se considera comando externo a todo aquel comando que tiene un binario, mkdir, ls, etc.
+
+type: Con type podemos salir de dudas si estamos tipenado un comando externo o interno de linux. nos devolvera encasi de ser interno nos devolvera "es una orden interna del shell", en caso de no ser interno nos devolvera la ruta del bin. Dato interezanteno todas las shell poseen los mismos comandos.
+
+which: which "algo" Nos permite encontrar un determinado fichero,ejecutable,etc dentro del path del sistema.Esto nos devuelve la ruta del ficheero en concreto.
+
+whereis: whereis "algo" Comando que nos busca el origen del fichero como tambien la informacion en donde esta(codigo fuente) y como usuarlo(documentacion con man). 
