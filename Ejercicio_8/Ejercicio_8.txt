@@ -1,0 +1,15 @@
+Ejercicio_8
+
+INODOS - ENLACES
+
+Inodo: almacena infromacion de metadatos(como el tamaño, usuario, direccion, identificador del inodo etc.).El inodo no guarda el nombre del fichero, esto se guarda en el directorio.
+
+ln "file" "linkFile": ln lo que hace es crear un enlace con el fichero en cuestión.
+en el ejemplo trabajado apreciamos que luego de la numeacoin delos permisos prosigue un numero y ese es considerado el numero accesos a esa informacion de los inodos por los que fichero1.txt + fichLink.txt forman el 2 y como se vee, el fichero y el link del fichero comparte el mismo inodo. Si eliminamos este numero sera 1. en el enlace. Hasta que no boren todos los ficheros que apuntan al inodo no se borra la informacion.
+
+En la practica de creacion de un enlace simbolico de ejemplo apreciamos que es un enlace de acceso directo como lo suele hacer windows, por lo que un enlace hard apuntan al nodo y son ficheros por si mismos, mientras que el soft es solo un apunte al contenido real.
+
+extension de comandos 
+
+ls -l "file": Extiende los detalles del fichero y vemos el numero en la tabla de inodos.
+ls -li "file": el i es para ver el numero de inodos.
