@@ -1,0 +1,19 @@
+Ejercicio_13 -  DATE - UPTIME
+
+DATE, UPTIME
+
+date: Devuelve la fecha actual, dia, mes, hora, minutos, segundos, centicimas. Por lo general tiene muchismias utilidades en linux. 
+Con la instrucion date +'%d' nos trae el dia.
+Con la instrucion date +'%m' nos trae el mes.
+Con la instrucion date +'%y' nos trae el año, mas atajos en la imagen.
+Tambien permite la alterar la salidas con mensajes personalizados. Por ejemplo : date + 'El dia de hoy es %d del mes %B'.
+Si se quiere alterar la fecha se puede realizar desde el usuario root (por los permisos). con una instruccion ejemplo de esta manera. date 081522002019 . lo que se significaria:
+jeves 15 de agosto del año 2019 a las 22:00:00hs.
+
+uptime: permite ver informacion interezante con respecto a nuestro sistema operativo linux. por ejemplo tiempo activado desde su instalacion, tiempo de carga media, usuarios, etc.
+Algunas propieades son :
+uptime -p : tiempo de vida del sistema.
+uptime -s : momento exacto en el que el sistema se activo y comenzo a funcionar.
+
+
+

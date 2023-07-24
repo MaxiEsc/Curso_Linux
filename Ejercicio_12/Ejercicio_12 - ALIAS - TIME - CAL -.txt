@@ -1,0 +1,15 @@
+Ejercicio_12 - ALIAS - TIME - CAL - NCAL
+
+ALIAS, TIME, CAL , NCAL
+
+Alias: alias ""='algo/dir' Comando nos permite crear de manera muy simple nuestro comandos. por ejemplo: lista='ls -l' entonces se ejecutara el alias y lista sera ls -l. 
+Si se ingresa alias si el = en lista habiendo ejecutado el ejemplo previo, vamos a obtener el valor del alias 'lista', por lo que permite una foimra mas fluida y personalizada de trabajo.
+Si bien el vido lo define como macro a esta especie de acceso directop o atajo personalizado.
+ 
+time: time "tarea/dir" Este comando nbos indica el tiempo en el quetarda en realizar alguna operacion en nuestro sistema.un ejemplo copado es time du -a / en donde analizara todos los archivos instalados en nuestro so. este comando se puede detener con ctrl+c como de costumbre.
+
+cal: Es simplemente el calendario que se utiliza en linux desde tiempo inmemorables, por ejemplo una forma de usarlo es cal "año deseado" y se presentara el año de todo el calendario.
+Con la instruccion cal -m "num", devuelve el mes del num ingresado. Con la instruccion cal -m "num" "año". lo mismo pero del año correspondiente.
+
+ncal: Funcionalidad similar al cal pero presentada de otra forma. Nos permite a diferencia del calendario gregoriano presentar el calendario de otra maneracon mas opciones.
+por ejemplo ncal -M
