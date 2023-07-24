@@ -1,6 +1,6 @@
 Ejercicio_7
 
-Comandos - Parte seis -  tail, less, tree 
+Comandos - Parte seis - tail, less, tree 
 
 tail "file": Este comando nos permite ver las ultimas 10 lineas de un archivo... Que utilidad tiene y bueno supongamos quetendriamos queller un log este comando nos vien que ni pintado...
 Podemos alterarlo con tail -n 20 "file" con 20 lineas o las que querramos. Con tail -f "file", nos el archivo queda abierto y esperando... es perfecto para ver un log auto-actualizable.

@@ -1,0 +1,18 @@
+Ejercicio_10 - TAB - HISTORY - SESIONES
+
+TAB - HISTORY - SESIONES
+
+autocompletar: funciona con la tecla tab... una funcion muy util para completar la posible ruta con la conicidencias ortorgada. conj doble "tab" el sistema nos devuele en panatalla las posibles rutas cual querramos acceder, no obstante, tambien funciona con los comandos si no terminamos de completar y realizamos un dobta "tab" el sistema no imprimira en pantalla todos los posibles comandos que podemos utilizar con la iniciale ingresada.
+Con el comando history nos mostrara todos los comandos quese han utilizado al principio del curso. en nuestro caso desde que instalamos el SO. Este comando puede ser ingresado con numero y mostrar segun el numero las ultimas incidencias, por ejemplo: history 4, mostrar los ultimo 4 comando ejecutados...
+Este comando no se escribe con history pero forma parte de la funcionalidad es "!!" ejecuta el ultimo comando ingresado,(nos puede servir cuando tenemos que tipear una ruta muy larga...aunque con los comando necesario la podemos autocompletar). Otra interezante fora de ahorrarse la escritura de los comandos es simplemente ejecutar el !"numero", una ves aplicado el comando history este parate con numeros a la izquierda, por lo que podemos tomar como indicadores de los comandos de history, para acceder rapidamente con !"numero deseado con el comando deseado", ejemplo supongamos que clear es el 255 del registro de history, tipeamos !255 y se ejecutara clear y limpirar la pantalla.
+Con el comando history -d "nume de indice, se puede borrar el comando del historial, por lo que se leasignara el siguiente.
+
+Sesiones:
+
+ctrl + alt + f3: Nos permite abrir un entorno en donde ingresaremos la clave de rooty permitira mas de una session para poder alternar con los usuarios
+ctrl + alt + f2: es para salir de ese entorno
+ctrl + alt + f4: Permite entrar a otro entorno del sistema, 
+
+
+
+
