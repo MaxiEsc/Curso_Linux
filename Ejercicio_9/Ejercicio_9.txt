@@ -1,0 +1,22 @@
+Ejercicio_9
+
+Comandos  | parte siete | du, df
+
+du:  Permite la visuyalizacion del tamaño con mas detalle de los ficheros, si se coloca du en la consola en seco, obtendremos todo los detalles de los archivos del directorio. 
+La definicion du "dir" permite el ver el tamaño de dicho directorio. Con du -m "algo" si es con "algo" no dispondra del archivo en tamaño de megabytes, en caso de no definir archivo o directorio este clasificara todos los acrhivos y directorio en megabites de donde se encuentre. 
+Con -k es en tamaño de kilobytes, con -b es el tasmaño en bytes. 
+Con la instruccion de du -am tenemos con el tamaño en megabites de todos los ficheros del usuario en donde nos encontramos. 
+Con la instrucion du -m "/etc" ,permite sacar el tamaño de nuestros directorios.
+
+df: (disk free) instruccion que sirve para detallar el espacio que ocupa nuestro sistema de archivos, por lo que nos detala cuanto ocupa y cuento se encuentra libre. 
+Cuando se ejecuta muestra el espacion libre. 
+Con la instruccion df permite mostrar, los ficheros y los muestras en bloiques de tamaño de bytes. 
+Con la instruccion  df -h realiza lo mis pero con el tamaño resuimdos en bites, megabytes y gigabytes
+Con la instruccion df -m realiza lo mismo pero con megabytes:
+Con la instruccion df -T noc muestra una columna con el sistema de archivos instalado.
+
+
+
+
+
+du -k "dir"
