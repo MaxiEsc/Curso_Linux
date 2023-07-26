@@ -1,0 +1,22 @@
+Ejercicio_15 - REDIRECCIONAMIENTO II - AGUJERO NEGRO
+
+REDIRECCIONAMIENTO II, AGUJERO NEGRO
+
+Nuevo concepto:
+el sigo "<": por ejemplo supongamos creamos un fichero documento1.txt que tenga el valor "esto es una prueba" y prosiguiente aplicamos tr e x < documento1.txt en vez de solicitar la entrada estandar, se solicite otra entrada. por lo que sucederá se sustituira las e´s por x´s dentro del documento por lo que mostrara xesto xs una pruxba. lo cuerioso es que el tr no modifica los datos solo modifica la salida de los datos en pantalla por lo que con ">>" podemos agregar y no se aplicaron las x´s si agregamos echo "SALUDOS A TODOS" >> documento1.txt se mostrara sin las x´s.
+
+Instruciones:
+wc -l : Esto es un comando que permite contar las lineas ingresadas. para que lo haga y esl sistema deje de esperar se inserta ctrl+d. tambine ppodemos usarlo con ficheros para que cuente sus lineas wc -l < documento1.txt ydevuelve las lineas en este caso devolveria 2.
+
+Supongamos la instrucciones. wc -l << final. con eso esblecemos una condicion con la que queremos dejar una condicion de corte con string y podemos ingresar lineas y si ingresamos la palabra final esta cortara y contara las palabras ingresadas por cada enter ingresados.
+
+Ejemplo : tambien se puede aplicar con tr. por ejemplo con tr a p << end. lo que solicitamos aqui se reemplazara todos los caracter "a" con "p" hasta encontrar la palabra end.
+por lo que el sistema se pondra en modo espera para que se ingrese las palabras deseadas hasta que se encuentren la palabra "end". tambien se puede aplicar con 1> para la salida Ejemplo
+cat /etc/passwd 1> usuariost.txt 
+
+con los errores se pueden almacenar en ficheros:
+2>: Suponga un error sea cat documento83... Este no existe y nos devolvera un mensaje deseado. por lo que... ¿Que tal si se lo almacena en un fichero?, Para hacerlo aplicamos la la instruccion  "cat documeto83 2> error.txt". el hecho de aplicar el 2 es por la biblioteca stdin(2) error en la pantalla.
+
+Agujero negro.
+/dev/null es un agujero negro en donde todo lo que se envia desaparece.
+
