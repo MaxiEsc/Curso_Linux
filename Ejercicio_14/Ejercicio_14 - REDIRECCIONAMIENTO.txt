@@ -1,0 +1,14 @@
+Ejercicio_14 - REDIRECCIONAMIENTO
+
+REDIRECCIONAMIENTO
+
+Resumidamente podemos comprender que la entradas, salidas y errores estandares de dispositivos(teclado, mouse, monitor, etc.) en linux, todo es un fichero, una cadena de strings, Se representa en linux como
+ficheros dentro de, mayormente en el directorio /def.
+si utilizamos la instruccion cat sin argumentos quedara abierta la biblioteca estandar stdin(0)que habilita la entrada del teclado para escribir y devolver lo que se le tipee. (para salir de esa biblioteca o controlador estndar se le acciona ctrl+d).
+tr : traslate permite cambiar unos caracteres por otros. por lo queactiva el stdio por lo cual por ejemplo: tr "a" "o", aqui estoy remplazando las a´s por o´s escribo "hola" y devuelve "holo".
+se usa mayormente en programacion
+Utilidades:
+comando ">" : Supongamos que se usa el siguiente comando, echo hola > f1.txt. se creara como previamente vimos un archivof1 de extension txt llmado hola, pero si aplicvamos lo mismo pero en vez de hola se le escribe adios manteniendo el mismo nombre y extension de el archivo... Este se reemplzará. con el doble ">>" podemos agregar cosas al archivo al fin del mimso, por lo que si queremos podemos agregarle la fecha : (date >> f1.txt) archivos de contraseñas, (como cat /etc/passwd >> f1.txt ) 
+
+
+
