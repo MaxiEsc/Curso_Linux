@@ -1,0 +1,24 @@
+Ejercicio_16 - TUBERIAS - FILTROS
+
+TUBERIAS , FILTROS
+
+tuberias : conocido como pipe, permite redirigir la salida de un comando a otro comando.
+suponga que se toma el documento1.txt creamos una copia del mismo con cat documento1.txt > documento2.txt y le decidimos reemplazar las a´s por z's  al documento2.txt, con estas instruccion tr a z < documento1.txt >documento2.txt. luego vemos el documento2.txt cvon todo lo reemplazado y ponewmos en practica el concepto de tuberia con el documento2.txt.
+con cat documento2.txt | tr a p lo que realiza con "|" es que no envie el documento a la salida estandar, si no que se la envie a tr reemplazando las a´s con las p´s y luego una vez cho eso tr las envia a la salida estandar.
+otro ejemplo es con wc:
+cat documento2.txt | tr a j | wc -l: hace lo imsmo que arriba pero reemplazando las a´s por j´s y contando las lineas al final.
+
+filtros: Comando que no fuincionan por si mismo si no trabajan en base a otros archivos
+wc: nos permiote contar lineas
+grep:Nos permite buscar textos
+sort:nos permite ordenar
+diff:nos permite buscar diferencias
+cut:nos permite cortar trozos de ficheros.
+uniq:nos permite eliminar filas repetidas.
+Por ejemplo creasmos lista de nombre con gedir y lo guardamnos en nuestro directorio()Esta lista puede obtener ... Una vez hecho se aplica cat nombres.txt | uniq -c. Con unic nos devuelve los nombres no repetidos, con el argumento -c nos devuelve cuantas veces se repite el nombre. con uniq -d devuelve los nombres repetidos, ejemplo cat nombres.txt | uniq -d > repetidos.txt
+ 
+
+
+
+    
+ 

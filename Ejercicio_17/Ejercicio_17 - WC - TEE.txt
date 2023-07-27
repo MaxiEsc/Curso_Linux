@@ -1,0 +1,29 @@
+Ejercicio_17 - WC - TEE
+
+WC, TEE
+
+wc : Se profundiza el comando wc. Ejemplo tomamos el archivo con el listado de nombres que estabamos utilizando, insetamos el comaando cat "archivo" | wc. nos cuenta los nombres o lista de palabras que hayamos insertado por ejemplo nos devolvera la cantidad de lineas, palabras y caracteres que tenemos en el fichero.
+Con cat "archivo" | wc -l nos devuelve la cantidad de lineas.
+Con cat "archivo" | wc -w nos devuelve la cantidad de palabras.
+Con cat "archivo" | wc -c la cantidad de bytes del fichero.
+Con cat "archivo" | wc -m la cantidad de caracteres. (En linux puede no haber diferencia con la cantidad de bytes y caracteres, puesto que en linux cada byte es un caracter(casi siempre depende del caracter) miestras que en otros SO es distintos).
+Con cat "archivo" | wc -L nos dice cual es la lineas mas larga en cuanto a caracteres.
+
+Comando uptime:
+Con uptime | wc -w, en esto cuanta la cantidad de palabras del comando uptime
+Con uptime | wc -c, cuenta la cantidad de caracteres.
+
+comando tee.
+Si se quiere manda la lista de comando a un fichero y mostrarlos en este caso se utiliza el comando tee.Ademas de redirigir la salida de un fichero 
+Con ls -l | tee listar.txt -> lo que realiza es mostrar una lista de los ficheros del escritorio los muestra en pantalla y los guarda en listar.txt
+interezante!!! Con ls -l | tee listar.txt listar2.txt -> podemos hacer lo mismo pero con dos ficheros.
+Un ejemplo interezante es utilizar ping en una pagina web
+por ejemplo 
+ping www.google.com | tee ping.txt -> esto hace que se cree un fichero con el nombre de ping.txt -> ctrl+c para para el ping.
+
+
+
+
+
+
+
