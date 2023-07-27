@@ -1,0 +1,23 @@
+Ejercicio_18 - SORT - CUT
+
+SORT, CUT
+
+sort :permite ordenar resultados
+Ejemplos
+
+cat "nombres" | sort : ordena por orden alfabetico el archivo nombres.
+sort -r "nombres" : ordena de manera inversa
+sort "nombres" -o nombres_ordenados.txt / sort nombres > nombres_ordenados.txt : Creamos un fichero .txt con los nombres ordenados. 
+sort  "dir/*": ordenar los directorios.
+ls | sort "dir": orden la muestra de las carpetaspor orden alfabetico, el dir es para asegurar una ruta para guardar el archivo.
+du -ma | sort : devuelve los archivos de linux ordenados por regla alfanumerica
+du -ma | sort -n: Devuelve la lista organizada por orden numerico.
+
+Comando de CUT
+
+.Con du -a | cut -f1 : haga una consulta de todos los ficheros en linux,  en el directorio actual, haga el corte de la consulta mostrandonos el tamaño(En otras palabras corta la consulta y solo traer el tamaño).
+.Con cat etc/passwd | cut -d ':' -f6: en este caso abriremos el archivo passwd con los usuarios del sistema donde con "-d" delimitaremos con ":", y traerme el campo numero 6(con -f6) de los ficheros con  cat etc/passwd | cut -d ':' -f1,6: lo mismo pero trae los campo 1 y 6.
+.Con ls -l| cut  -d ' ' - f3 : estamos en el directorio Home si aplicamos la instruccion nos devlovera una lista con los directorios de home, donde cortan y nos traeran el campo 3 con el de limitador ' '.
+Interezante!! linux con la intruccion ls -l| cut  -d ' ' - f5,9  puede tomar errores, y toma los espacios en blaco( 4534   89 Descargas) como lineas aparte y las lista, lo cual genera falla el deliminador.
+parar esolverlo ls -l| cut -c 30-39 estop permite ordenarlo mejor.
+ 
