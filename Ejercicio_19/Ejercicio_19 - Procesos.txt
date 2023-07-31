@@ -1,0 +1,31 @@
+Ejercicio_19 - Procesos 
+
+Procesos - Primera parte
+
+Todo proceso posee un PID (Process Identification)
+
+ps: (process Status) : Comando que se usa para trabajar con los procesos, permite ver los procesos en ejecucion, en linux.
+Con ps -f Nos permite una visualizacion mas detallada de los procesos inclusive con el PPID queeste es el procesos identificacion del proceso padre.
+Con ps -l Nos muestra mas detaales como el "Flat", permite laq visualizaion del estado(Por ejemplo S -> Suspendido, R -> Ejecucion -> En ejecucion, etc).
+Con ps -ef Nos permite ver una visualizacion de todos los procesos, pero los lanza a todos a medida que se van ejecutando.
+Con ps -ef | less : Con este comando nos permite paginar, por lo que le esamos diciendo que nos tragia todos los procesos del sistema y nos permita verlo en forma de paginacion.
+El origen de todos los procesos se muestran.
+Con ls -ls /sbin/init muestra el proceso padre del sistema operativo, este permite el arranque del sistema operativo.  
+
+Procesos - Segunda parte
+
+Ejemplos con ps
+
+Con el comando ps -ef | grep "pid del padre" : obtendremos los procesos princiales de linux con esto pdemos proseguir a buscar el proceso padre del proceso del gnome-terminal-server, al observar la jerarquia de los procesos del sistema operativo, todos tiene como origen final aquellos procesos del sistema operativo de PID 1.
+Con el comando ps -ux | less (para que tabule el resultado o simplemente lo pagine): en este proceso se puede apreciar que es el encargado de la interfaz grafica de linux, como tambien con el | less se puede apreciar todos los procesos que funcionan con este.
+Con el comando ps -uxf | less : Este proceso trae la informacion tabulada o paginada en forma de arbol.
+Con el comando ps -ef | grep "programa"(firefox ej.) : podemos apreciar los procesos que lleva a cabo dicho programa.
+Ejemplos con Pstree.
+pstree | less : Permite ver los procesos que se ejecutan en el sistema pero en modo grafico.
+pstree -p | less : nos permite ver Ids con los procesos del sistema operativo.
+Con el pstree "id process" : permite ver el id del proceso ydel proceso padre, solo bastan con estos dos
+Con el pstree -p "id process" : podemos los procesos en linea incluyando su suprema raiz. Osea, aquellos procesos que activan el sistema operativo. nos sirve mas que todo conceptualemetne para determinar de donde viene los procesos
+
+
+Procesos - Tercera parte
+
