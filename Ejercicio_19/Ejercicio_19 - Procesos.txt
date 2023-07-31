@@ -26,6 +26,22 @@ pstree -p | less : nos permite ver Ids con los procesos del sistema operativo.
 Con el pstree "id process" : permite ver el id del proceso ydel proceso padre, solo bastan con estos dos
 Con el pstree -p "id process" : podemos los procesos en linea incluyando su suprema raiz. Osea, aquellos procesos que activan el sistema operativo. nos sirve mas que todo conceptualemetne para determinar de donde viene los procesos
 
-
 Procesos - Tercera parte
+
+los procesos en linux poseen prioridad, en linux es un SO de multiprocesos, lo cual estos procesos se denominan "procesos de tiempo compartido" lo que hace sel sistema es ejecuta mediante una cuota de tiempo si este no termina entonces elistema lo duerme o suspende y sigue con otro proceso. Si bien en linux se ejecutan procesos con un determinado tiempo, si bien la escala de prioridades se establecen en negativo [-20,19]. lo que quiere decir quea menor numero negativo. Tiene mas prioridad. 
+Por ejemplo si se ejecuta el comando ¨ps -elf | less : no soltara la informacion de todos los procesos y en la columna NI se observa la prioridad, 
+(NOTA: NO CAMBIAR LA PRIORIDAD DEL PROCESOS DEL SISTEMA)
+sleep "numero de tiempo": nos permite dormir o suspender el proceso por x tiempo
+Con el comando Sleep 15 simplemente se "Duerme" al proceso, lo que ortorga un total de 15 para "el dormir del proceso".
+Con el comando ps -eo pid,ni,comm | greep sleep estos cmapos se extraen (no de manera exacta) con el comando ps -fl.
+renice "numero de proceso": Sirve para cambiar la prioridad de los procesos, mayormente para quitarle prioridad, si bien s puede agregarle prioridad pero ya choca con el tema de los permisos.
+por ejemplo renice +10 6437 le quitaria prioridad al proceso.. otro ejemplo (pero se necesita permisos especiales) es renice -5 6437.
+
+Comando top
+
+top :  Permite la visualizacion del lso recursos de uso del sistema, es como un admistrador de tareas, en donde se puede apreciar los procesos, el consume en cuante al CPU, el uso de la ram del sistema, entre otros. con M permite el orden de los recursos mediante uso de memoria, con C actualiza la lista por mayor uso por procesador, p por procesos, T por el tiempo de acticidad, con k permite matar procesos, pero no ees como si se pueda ir por ahi matando procesos al lo loco... Primero se debe conseguir los permisos para linux, y encaso de tenerlo, tampoco estan buena idea pues puede el SO perder estanbilidad. con V podemos ver en formato arbol. con m permite ver el uso de la memoria con un tanto grafico, lo mismo con t pero con el tiempo. Con w permite guardar la configuracion personalizaeda de linuxen top.
+
+
+
+
 
