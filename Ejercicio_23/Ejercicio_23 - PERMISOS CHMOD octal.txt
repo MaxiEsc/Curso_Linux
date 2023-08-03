@@ -1,0 +1,11 @@
+Ejercicio_23 - PERMISOS: CHMOD octal
+
+PERMISOS: CHMOD [octal]
+ Si ien el sistema se base en la sumatoria de los numeros como como en la imagen de la carpeta 
+el numero maximo posible es 7 este incluiria r,w,x mas o menosla imagen lo explicara mejor.
+por ejemplo: 
+Con chmod 444 "nombre_fichero" : oortorga permiso escritura a primer 4 al usuario, el segundo 4 es para el grupo, el tercer 4 es para los otros usuarios. 0 es para quitar permisos. en caso quitar todo los permisos no se puede ni acceder pero al ser dueño el usuario este puede volver a habilitar losl permisos.
+
+umask : denota los permisos por defecto
+
+ 
