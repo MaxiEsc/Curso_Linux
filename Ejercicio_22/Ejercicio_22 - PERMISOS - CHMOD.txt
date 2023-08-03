@@ -1,0 +1,27 @@
+Ejercicio_22 - PERMISOS - CHMOD
+
+PERMISOS: CHMOD
+
+conceptos interezantes: Vemosquees importantes tener las x de ejecucion en los directorios para poder ingresar en el mismo, normalmente se puede acceder el ussuario crea directorios para que el mismo pueda acceder gracias pertenecer al mismo grupo de usuarios del sistema. Por ejemplo en el sistema no se podra acceder debido que en la seccion de permisos habra solo "-". 
+interezante, tambien se aplica con los comandos de linux en la carpeta /bin,habra comandos que no se pueden utilizar debido alos permisos.
+chmod (change mode): Bospeermitecambiar los permisos en  ficheros y directorios linux. se puede usar de manera normal y octal. este comando posee la posibilidad de cambiar el permiso de los usuarios con "u", con "g" para los grupos, con "o" para otros, con "a" para todos.
+Ejemplo: 
+Con chmod g+w "nombre_fichero" se le ortorga permisos de escritura.
+Con chmod o+x "nombre_fichero" se le ortorga permisos de ejecucion.
+Con chmod a+x "nombre_fichero" se le ortorga permisos de ejecucion a todos los usuarios.
+Dato: si se le quiere quitar permidos al fichero, entonces se le asigna un "-" en vez de un "+"
+Ejemplo: 
+Con chmod o-x "nombre_fichero" se le quita el permiso de ejecucion a todos usuarios de linux
+Con chmod g-w "nombre_fichero" se le quita el permiso de escritura a todo el grupo usuarios de linux.
+Tambien se pueden combinar las instruciones pera no escribir tanto: Ejemplo
+Con chmod go+w "nombre_fichero" se le ortorga permisos de esritura a todos usuarios y grupos de usuarios de linux.
+Con chmod go+wr "nombre_fichero" se le ortorga permisos de esritura y lectura a todos usuarios y grupos de usuarios de linux.
+Con chmod go-wrx "nombre_fichero" se le quita permiso de esritura, lectura y ejecucion a todos usuarios y grupos de usuarios de linux.
+Mas combinaciones: 
+Con chmos g+rw,o+r "nombre_fichero": se le ortorga permisos de esritura y lectura al grupo de usuarios todos usuarios y la lectura a otros usuarios de linux.
+
+Recordar: ls -ld : es para analizar los datos del directorio.
+
+tambien el chmod : funciona con directorios.
+
+
