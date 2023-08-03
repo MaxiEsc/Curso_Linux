@@ -1,0 +1,23 @@
+Ejercicio_20 - KILL - JOBS 
+
+KILL - JOBS 
+
+realizar un "kill" es mandar una señal en linux, por lo que se significaa en resumen:
+
+kill "codigo" "idman": Nos permite enviar señales los procesos: 
+con kill -l, listar las señales con sus redpectivo codigo de cada señal, por lo que recibiremos su tan ansiada suspension de la señal indicada. 
+Con man signal obtendremos la informacoiñn necesaria para operar con el comando signal,se sale con "Q".
+por ejemplo en dos ventanas: uns con el comando sleep 1000 y la otra con el comando ps -ef | grep sleep lo que hacemos es usar el proceso sleep( cuyo comando lo activamosen la otra ventana), por lo que con el codigo mostrado( en el codigo ps)  podremod matar este procesos con el codigo "kill", ejemplo kill -15 (6759)sleep.
+
+conceptos: Trabajo en segundos plano: con el comando sleep 1000 &: se le asigna al sistema un proceso en segundo plano, en este caso es el sleep.
+ 
+nuevo comando:
+
+jobs: sirve para mostrar los procesos en ejecucion, osea aquellos procesos que se ejecutan en segundo plano. ejemplo los sleep. podemos matarlos con kill. si bien los procesos que se muestran en jobs sonen unalidta formateada y no dabemos con exactitud cuales son. Con el comando fg 1, lo traemos aprimer plano.
+ 
+Atener encuentason los procesos en segundo plano como el du se pueden pasar a segundo plano, pero seguira pintando la pantalla y no permite la ejecucionj comoda y vidta en el shell de siempre.
+con este comando: du -am / > a/tmp/tam_disco 2> /tmp/erorres.txt &: con este comando decimos que el no nod muestre enpantalla si no que nos lo escriba en un archivo tam_disco y los errores nos los escriba en un archivo errores.txt
+
+
+
+

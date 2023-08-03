@@ -1,0 +1,11 @@
+Ejercicio_21 - USUARIOS - PERMISOS 
+
+USUARIOS - PERMISOS 
+
+Permisos: Todos los usuarios de linux poseen noombre de ususario y contreseña si bien los usuarios se encuentran almacenados en el fichero "/ETC/PASSWD". 
+cabe mencionar  que los  uduarios  de linux contan de un numero de grupo propietario de usuarios y un numero de usuario.
+
+como ver los permisos de los ficheros?
+Tecnicas:  vista con ls -l : se puede apreciar ños permisos de los usuarios en la seccion de la primera columna,  (recordar los que tiene "-" son ficheros normales... Los que peseen "D" son directorios.) entonces, por ejemplo "drwxr-xr-x" es una columna ejemplo que la primera letra("d") nos dice que es un directorio, los siguientes 3 caracteres("rwx") nos dice los permisos, las siguientes 3 caracteres ("r-x") nos dice los permisos del grupo, los siguientes 3 caracteres ("r-x") son masd permisos para otros usuarios del sistema.
+dato interezante: si hay letras entoces signifca permiso activado si no hay letras es lo opuesto. 
+Con el tema de los permisos que se pueden escribir(w), leer(r) y ejecucion(x). el signo (-) indica que no es ejecutable.
