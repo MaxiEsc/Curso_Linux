@@ -1,0 +1,16 @@
+Ejercicio_26 - VARIABLES - PATH
+
+VARIABLES: PATH
+
+laforma de crear una variable enlinuc es muy facil solo resta tipear por ejemplo: v:10 ylidto la variable v=10 es crea.
+
+importante podemos crear un fichero .sh(aunque en linux la extension es lo de menos... pero para las buenas practicas) lo alojamos en algun directorio u le aplicamos la instrucion chmod +x listar.sh para darles permisos de ejecucion 
+
+en windows busca en los archivos en el path, en las variables de entorno y en el directorio, en cambio linux no es asi, este busca mediante el path completo de direcciones
+
+Como cmabiar la variable PATH... (No USAR EL SET por que se cambia completo)
+OJO tamien de colocarla sin $, SE SOBRESCRIBE TODO... YA TE PASO!!!	
+
+para aadirlo al path  se realiza PATHG=PATH:/home/escobar88/ejecutable
+
+
