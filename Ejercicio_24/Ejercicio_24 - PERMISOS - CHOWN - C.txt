@@ -1,0 +1,15 @@
+Ejercicio_24 - PERMISOS - CHOWN - CHGRP
+
+PERMISOS: CHOWN , CHGRP
+
+En este caso ve,os 2 comandos que permiten cambiear el propietario y el grupo de los ficheros.
+Tan bien es necesario tener los permisos pera realizar los cambios de los permisos.
+
+Crear usuario nuevo: 
+
+sudo useradd -b(esto es para indicar el directorio del mismo)
+sudo passwd (actualizar contraseña)
+chown: (change owner) sirve para cambiar de propietario, permisos mayormente como el usuario root ejemplo "sudo chown 'user' 'fichero'.
+chgrp: (change group) sirve para cambiar de grupo, permisos mayormente como el usuario root ejemplo "sudo chgrp 'user' 'fichero'.
+
+

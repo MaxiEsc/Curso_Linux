@@ -1,0 +1,11 @@
+Ejercicio_25 - VARIABLES
+
+VARIABLES de entorno : Se manejan similares alas de windows pero constan de dos grandes grupos:
+Variables puras de entorno:
+
+Variables de tipo shell:
+ 
+Comandos de utilidad  
+Printenv : sirve para imprimir las variables de entorno con el fin de mostrar las ya presentes en el sistema. si bieb las variables de entorno como buena practica estan escritas en mayusculas con el formato clave valor... 
+set: Permite la visualizacion de las variablaes de entorno.
+la forma correcta de acceder alas variables es tras la instrucion "printenv" es con echo $"nombre variable".
