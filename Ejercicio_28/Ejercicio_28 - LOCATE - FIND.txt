@@ -1,0 +1,12 @@
+Ejercicio_28 - LOCATE - FIND
+
+LOCATE - FIND
+
+Locate:  nos permite localizar ficheros de forma muy rapida, No busca a lo largo de losficheros en linux si no que realiza la busqueda en una base de datos. 
+este utiliza un archivo tipo .db 
+importante ingresar a la ruta de /var/lin/mlocate
+mayormente asignado con "mlocate"
+
+find: Este posee la estructura siguiente "find dir_inicio opciones termino" el find si busca dentro del sistema de ficheros por lo que es mas lento por lo cual hay que elegirlo con cuidado  porque basicamente busca en todo el sistema ejemplo: find . -name "f*" o find . -not -name "*conf*" -print
+. 
+

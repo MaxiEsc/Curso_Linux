@@ -1,0 +1,12 @@
+Ejercicio_27 - VARIABLES - PROMPT
+
+VARIABLES: PROMPT
+
+cambiar la variable de entorno del usuario de linux 
+variable de linux $PS1: esta es la variable de entorno que altera el prompt, el prompt es el entorno, por ejemplo: PS1="Usuario \u" con esto el usuario sera el mismo que  el registrado en linux estos comandos como el \u son sacado desde la configuaaracion de prompt
+
+¿donde se crean las variables de entorno? son variable que se activan al iniciar el sistema 
+/etc/profile -> Login
+/etc/bash.bashhrc -> bash
+
+
