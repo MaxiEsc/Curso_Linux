@@ -1,0 +1,32 @@
+Ejercico_30 - COMPRIMIR ARCHIVOS - GZIP - BZIP - ZIP 
+
+OMPRIMIR ARCHIVOS, GZIP, BZIP, ZIP 
+
+GZIP: Uno de los mas clasicos de linux, solo comprime en un archivo para la comprension de los datos, es efectivo y seguro. 
+BZIP: Mas moderno que el zip con un algoritmo eficaz con la  compresion de datos.
+ZIP: la forma de comprension mas universal incluso compattible con windows comprime agrupando en un archivo del mismo formato.
+
+Ejemplo con gzip:
+gzip usuarios : crea un archivo comprimido engzip y elimina el archivo original. Con la instruncion gzip -k usuarios, no no lo elimna eln archivo original. en formato .gz dato inpotante con la * no crea un unico archivo es como deciamos comprime un archivo  por vez por lo que no los agrupa si no qeu los comprime a cada uno por si mismo.
+Descmprension:
+gunzip p* descmprime los archivos empezados por p.
+Datos curioso: aplicando el comando gunzip -l p* puede llegar a dar el caso que la comprencion quede negativa lo que ocasionaria que el archivo comprimido sea mas grande que el original.
+
+Ejemplo con bzip: Comando que utiliza un algoritmo de ficheros mas moderno que no funciona con todoslos ficheros ni de todos los tipos, pero como es de mas nuevo vale la pena apremderlo.
+para comprimir los archivos usamos :
+
+bzip2 * y se comprimen en formato bz2.
+para descomprimir usamos la siguiente instruccion:
+bunzip2 * y listo.
+
+Ejemplo con zip:
+zip copia.tar y genera un archivo copia.zip
+
+recuerda!!!! borrar todo del directorio rm -rf *
+descomprimir: unzip "ruta"
+
+Ejemplo aislado:
+tar cvfz copia2.tar.gz *
+
+
+

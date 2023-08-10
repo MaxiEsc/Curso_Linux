@@ -2,7 +2,7 @@ Ejercicio_29 - BACKUPS - tar
 
 BACKUPS: tar
  
-tar: es un comando que no comprime, pero empaqueta(genera un conjunto de ficheros con un determinado formato). con c -> permite crear. con x -> extraer, con t -> permite listar,con v -> VERBOSE permite darnos informacion de los que esta haciendo. con F -> File, permite ver donde se quiere desenpaquetear la informacion.
+tar: es un comando que no comprime, pero empaqueta(genera un conjunto de ficheros con un determinado formato). con c -> permite crear. con x -> extraer, con t -> permite listar,con v -> VERBOSE permite darnos informacion de los que esta haciendo. con F -> File, permite ver donde se quiere desenpaquetear la informacion. el z -> permite comprimir
 Ejemplo: 
  tar cvf copioa_ficheros.tar * (se crea un fichero,se solicita la informacion de estado del mismo, se coloca el nombre del paquete donde se desempaquetara y * de todos los archivos).
 para leerlos usamos:
