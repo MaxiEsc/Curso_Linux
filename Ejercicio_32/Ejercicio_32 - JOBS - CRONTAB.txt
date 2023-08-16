@@ -1,0 +1,11 @@
+Ejercicio_32 - JOBS - CRONTAB
+
+JOBS - CRONTAB
+
+crontab: Sirve para realiazar trabajos de tareas de tipo scheduler(o tareas de planificacion) en linux, sirve para configurarlo lo procesos de tareas mayormente.
+este se recomienda utilizar crontap -e para editar para el usuario.
+este no garantiza la exactitud justa, por lo que el sistema se puede depender del mismo sistema, osea si esta muy cargado el SO va a repercutir en el rendimiento del mismo.
+mas o menos resumidamente
+
+
+
