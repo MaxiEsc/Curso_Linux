@@ -1,0 +1,9 @@
+Ejercicio_31 -  JOBS WATCH
+
+JOBS: WATCH
+
+Comandos add, crontab.
+watch: Permite ver online los procedimientos de tipo jobs en linux, por lo que se mostraran en pantalla.
+free (utilizado en la parte de sistema y administracion de linux) : sirve para mostrar los datos de la cpu en el momento en de su funcion. datos mayormentede3 su memoria libre. se corta el funcionamiento con ctrl+c.
+Watch : sirve para mostrar en patalla cada x cantidad de tiempo ciertos datos.
+Ejemplo watch -n 2 free, en este comando le indicamos a la computadora que ejecute un "free" cada 2 segundos. o tambien watch -n 1 ls -l. actualiza cada 1 segundo.

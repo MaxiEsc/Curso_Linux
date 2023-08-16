@@ -1,0 +1,9 @@
+m ------corresponde al minuto en que se va a ejecutar el script, el valor es de 0 a 59
+h ------la hora exacta, se maneja el formato de 34 horas, valores de 0 a 23, siendo 0 medianoche
+dom ----dia del mes, ej: se puede especificar 15 si se quiere ejecutar cada 15 dias
+mon ----mes de 1 a 12
+dow --- dia de la semana, numerico (0 a 6 es Domingo) o las 3 primeras letras en ingles:
+                                                    mon, tue, wed, thu, fri, sat, sun
+                                                    
+user ------ usuario que va a ejecutar el comando ( solo se pone si somos root)
+command --- comando o script a ejecutar
