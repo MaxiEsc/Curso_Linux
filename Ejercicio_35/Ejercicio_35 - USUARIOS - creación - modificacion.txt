@@ -1,0 +1,32 @@
+Ejercicio_35 - USUARIOS - creación y administración
+
+USUARIOS: creación y administración
+
+se utiliza la clausula useradd, se puede usar bajo determinadas condiciones.
+
+Se recomienda comenzar con sudo useradd --help 
+
+creacion de usuarios:
+
+si bien es compleja dada la condicion de todos los permisos quee hay que establecer, pero aqui dejamos una instruccion en concreto:
+
+sudo useradd -d /home/desa1 -g "id_group" -s /bin/bash -c 'usuario_desarrollo_1' desa1 : Crea un usuario sin identificador tipeado.
+
+sudo useradd -u 3000 -d /home/desa1 -g "id_group" -s /bin/bash -c 'usuario_desarrollo_2' desa2 - : Crea un usuario sin errores con el identificador.
+
+modificacion de Usuarios
+
+usermod: si bien la instruccion usermod --help posee funciones similares por lo que podemos modificar los usuarios creados. 
+
+Ejemplos
+
+sudo usermod -g 3000 desa1 :Se edita el usuarios creado con id por defecto
+sudo usermod -G 1001 desa1 :con la G mayuscula se edita los grupos de los usuarios de manera que  permita agregar al usuario a mas grupos ademas del ya establecido. 
+
+modificar grupos en linux:
+
+comando groupmod : este copmando permite la edicion de un grupo a la vez, tomemos el siguiente ejemplo:
+
+sudo groupmod -n desa desarrollo: se cambia el nombre del grupo de trabajo
+sudo groupmod -g 3005 desa : se cambia el id del grupo.
+
