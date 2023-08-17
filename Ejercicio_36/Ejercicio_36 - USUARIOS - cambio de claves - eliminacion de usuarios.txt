@@ -1,0 +1,24 @@
+Ejercicio_36 - USUARIOS - cambio de claves - borrar grupos
+
+USUARIOS: cambio de claves, borrar grupos
+Comando 
+
+passwd : Este comando permite el cambio de la contraseñas en los usuarios de linux. una vez ingresado el comando tenemos que ingresar una nueva contraseña.
+
+Ejemplos del comando passwd:
+
+sudo passwd -l prueba: siempre ejecutar el modo por administrador, con esto se bloquea la contraseña del usuario, lo que se significa la imposibilidad de cambiar la contraseña.
+
+sudo passwd -u prueba: desbloquea la constraseña bloqueda
+
+sudo passwd -x 10 prueba: le da  tiempo caducidad a la contraseña
+
+Borrar Usuarios
+
+userdel : permite borrar los usuarios del sistema de linux.
+
+Ejemplos borrar grupos
+
+Con sudo userdel "username" : borra el usuario y su directorio
+Con sudo groupdel "groupname": borra un grupo de los usuarios. para evitar problemas se recomienda borrar o quitar los usuarios de los grupo que desea eliminar.
+Con sudo groupdel -f "groupname": froza la eliminacion de los grupos de usuarios.
