@@ -1,0 +1,12 @@
+Ejercicio_33 - passwd - shadow
+
+passwd - shadow
+
+Usuarios de linux
+
+Recordando el fichero passwd contiene los usuarios del sistema y el fichero shadow contiene las contraseñas de los usuarios del sistema operativo., tambien recordar que el fichero group contiene la informacion de los grupo de los usarios del sistema.
+less: permite ver los ficheros pagina a pagina.
+no manipular los ficheros con un editor de texto,solo mediante las herramientas unicas  y propias de linux.
+ 
+
+

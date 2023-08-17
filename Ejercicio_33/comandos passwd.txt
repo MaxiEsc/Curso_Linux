@@ -1,0 +1,7 @@
+  1 - Cuando se cambio la pass por ultima vez, dias transcurridos desde 1-1-1970
+  2 - El minimo numero de dias entre cambio de contrasenia
+  3 - Dias maximos de validez de la cuenta
+  4 - Dias que avisa antes de caducar la contrasenia
+  5 - Dias despues de que una pass caduque para deshabilitar la cuenta
+  6 - Fecha de caducidad, dias desde 1-1-1970 donde la cuenta es deshabilitada y
+      el usuario no podra inicar sesion

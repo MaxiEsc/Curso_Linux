@@ -1,0 +1,14 @@
+Ejercicio_34 - USUARIOS - CREACION DE GRUPOS
+
+USUARIOS: CREACION DE GRUPOS
+
+revision del fichero group dentro de la ruta etc/group, con cat lo abrimos, el id permite realizar consulata de los datos de los usuarios.
+
+la creacion de grupos de usuarios es inportantes porque a la hora de crear usuarios es inportante asignales un grupo primero, por lo tanto tenemos que realizar esta tarea primero.
+
+groupadd : comando simple que permite agregar grupos al sistema. 
+nota !!! para la ejecucion por administrador siempre anteponer la palabra "sudo"
+ejemplo:
+Con la instruccion sudo groupadd  desarrollo: Se crea un grupo llamado desarrollo. esto implica la creacion rapida sin controlar los ids automatico y esas cosas.
+Con la instruccion sudo groupadd -g 3000 testing con esta instruccion creamos el grupo con su id ya determinado.
+
