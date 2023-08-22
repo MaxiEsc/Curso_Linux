@@ -1,0 +1,7 @@
+Ejercicio_37 - USUARIOS SUDO - SU
+
+USUARIOS: SUDO , SU
+
+sudo : es una instruccion cuyo proposito es dar  acceso a los permisos de administracion para ejecutar codigos o comandos unicos que conlleva actividades de gran impacto en linux, estos comandos pueden tocar configuraciones delicadas del sistema.
+
+su : sirve para realizar tarea en un sistema que requiera tareas que conlleven mas de un usuario en la misma. por ejempl una tarea que conlleve la necesidad de ser x usuario para realizar la tarea del usuario del mismo.
