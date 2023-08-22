@@ -1,5 +1,7 @@
 Ejercicio_38 - Introducción al editor VI en Linux
 
+parte 1
+
 Introducción al editor VI en Linux
 
 vi: editaro de texto para linux debido a que no requiere entorno grafico, se recvomiendo aprender el editor vi debido a que las versiones mas utilizadas de linux no llevan entorno grafico, este editor solo detecta ficheros archivos txt.
@@ -16,3 +18,12 @@ w: avanza de palabra en palabra
 p: retrocede palabras por palabra.
 $: Al final del parrafo
 ^: Vuleve al prinicipio del parrafo
+
+parte 2 
+
+insesado un pdf que contiene las instrucciones de vi
+
+con la tecla i se cambia se pasa a modo edicion en el programa... para pasar al modo comando se utiliza la tecla esc.
+en el modo comando permite borrar caracteres con la letra x/supr sin entrar al modo edicion.
+con dw se borra la palabra completa dependiendo de la posicion del cabezal de texto, estase pueden combinar con los numeros... osea por ejemplo 3x, borra 3 letras, 3dw borra 3 palabras.
+
