@@ -1,0 +1,15 @@
+Ejercicio_41 - editor Vi - recuperar archivos - numerar lineas
+
+Vi: recuperar archivos, numerar lineas
+
+Recuperar un archivo.
+
+desde modo edicion, desde la memoria swap se crean los archicos temporales.
+ con el  comando ps -ef | grep vi nos traera los archivos que manipula vi, por lo tanto podemos apreciar el listado de los recursos utilizados por vi
+
+recordamos que con kill -9 n° de proceso y se puede matar el proceso.
+ para recurperar un archivo inaccesible, se ingresa al mismo y puede gracias al sistema de linux permite la recuperacion del mismo archivo por lo cual con el comando en modo x debemos ingresar :recover  y se intentara recuperar el archivo de linux, cabe mencionar que el proceso se encuentra en el mismo.
+
+para activar la linea de numeracion del editor vi: se debe ingresar el :set nu , para agregar la linea de numeracion de vi, para desactivar el sistema de lineas se implementa :set nonu.
+el comando set nu permite dar un salto de lineas en lineas, por lo que bastara con el salto de lineas escribiendo simplemente escribiendo el numero detras de los dos puntos ejemplo :34 salta la linea 24.
+Con el caracter ~ cambia las letras de minusculas a mayusculas o viceversa dependiendo de como se encuentre la letra, asi de se ubica de manera hacia adelante de letras en letra dependiendo en donde se encuentre la cabecilla del texto.
