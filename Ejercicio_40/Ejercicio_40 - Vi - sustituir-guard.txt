@@ -1,0 +1,17 @@
+Ejercicio_40 - Vi - sustituir-guardar
+
+Vi: sustituir, guardar
+
+nuevo modo para explorar modo x se activa con la tecla ":", consiste exribir los parametros para la sustitucion de caracteres o palabras.
+
+Para guardar : para guardar se debe realizar las sentecia en modo X :w que hace referencia write para escribir el archivo y se guarde.
+
+Para sustituir : para sustituir se coloca en el modo x. y en este caso como ejemplo se escribe de esta manera  s/a/e/ en donde va a reempla zar todas las a´s por e´s, solo en la palabra.
+para realizarlo en linea se hace 
+:s/e/*/g donde vemos el cambio de las e´s por * en toda la linea, con la letra, con la letra u devuelve los cambios hechos. Se puede realizar los cambios con palabras completas por ejemplo: :s/Tierra/Marte/g cambia la plabra "Tierra" por "Marte" en toda la linea. 
+encaso de quiere cambiar para todo el texto las sustituciones se aplica el comando :%s/a/o/g 
+
+para salir de vi basta tipear la letra :q y sale del editor vi sale siempre y cuando se haya guardado todos los archivos, sino se notidficara y se debera reescribir :q!
+para salir guardando :wq sale guardando los cambios
+otramanera de hacerlos es :x para salir de un texto de manera rapida.
+para guardar el archivo y renombrarlo al mismo tiempo es con :wq "nuevo_nombre".

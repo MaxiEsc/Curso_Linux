@@ -1,0 +1,13 @@
+Ejercicio_39 - editor VI -copiar-cortar-pegar-buscar
+
+VI: copiar, cortar, pegar y buscar.
+
+Para copiar : En el modo comando, colocar el cabecero desde donde se quiere copiar y presionar 2 veces la "y". para compair varias lineas selecionar con el puntero de texto y pintar las lineas deseadas a copiar, por lo que se tendra e ncuenta las ultimas lineas seleccionadas, y presionar la letra "3" +  2 veces la "y", esto sucede porque vi almacena las lineas en el bufer por lo cual luego desde el bufer accede ala memeoria para pegarla. Con la combinacion de "yw" copia la palabras dependiendo del cabezal del cursor hasta el fin del la palabra. la misma mecanica pero en opuesto, funciona con la combinacion de letras "yv". para copiar modo de porciones de frases,  necesitamos pasar al modo edicion y coolacar el puntero de texto sobre el principio de la palabra deseada y presionar "y$". la idea es lamisma para lo opuesto con "y0".
+
+Para cortar : basta colocarse en el princicio de la palabra y presionar "dw" yse crtara la palabra desaparaciendo del editor. con doble "dd" cortamos directamente la oracion entera. en el modo edicion claro esta... con "d0" se corta la palabras desde el cabeceroa hacia atras.
+
+
+Para pegar : en el modo comando, se coloca el cabecero del texto en donde se quiera pegar y luego presionamos la tecla "p". con "P", se pegan las lineas desde el cursor, con "P" se colocan por encima del cursor. 
+
+Para buscar : para buscar y reemplazar es con la tecla "/" y se pede escribir el patron de la palabra deseada en al buscar mostrara la primera ocurriencia hacia adelante, para buscar hacia atras se coloca ?. con "n" permite avanzar al siguiente resulatado por el contrario con "N" vuelve hacia la ocurrencia anterior de la palabra buscada. tambien el buscador puede buscar la palabras en frases y si no existe la palabra entonces se le informa al usuario.
+
