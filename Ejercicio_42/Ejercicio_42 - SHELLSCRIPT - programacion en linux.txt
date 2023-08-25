@@ -1,0 +1,17 @@
+Ejercicio_42 - SHELLSCRIPT - programación en Linux 
+
+SHELLSCRIPT [ programación en Linux ] :
+
+programa ejecutable en linux
+
+para ejecutar un script en linux debemos comenzar con el editor de texto gedit y la clausula #!/bin/bash luego seguido del caracter # se coloca un titulo ejemplo: #"titulo"  y hacer algo como por ejemplo echo 'hola mundo'.
+
+#!/bin/bash : esto le permite saber a linux con que shell correr el programa de linux
+
+# : se significa un comentario 
+
+recordar que en linux las extensiones son irrelevantes en el mismo, si tiene las extensiones es por buena practica, en fin...
+
+para volverlo ejecutable se tiene que aplicar las instruccion chmod +x "nombre del archivo".
+cabe destacar que para su ejecucion se debe aplicar las direccion del mismo archivo en el PATH de linux, por lo que como estrategia conviene crear una carpeta dedicada a los scripts y añadirla al path directamente, entonces cabe recordar que los errores en el pasado que personalmente cometi en linux y me costo su reinstalacion por lo pronto ojo con eso.
+

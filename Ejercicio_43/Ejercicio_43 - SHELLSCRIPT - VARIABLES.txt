@@ -1,0 +1,37 @@
+Ejercicio_43 - SHELLSCRIPT - VARIABLES
+
+SHELLSCRIPT: VARIABLES
+
+teoria de variables en linux.
+
+recordar dentro de la carpeta etc en el archivo profile tenemos las configuraciones del perfil en dadas por el usuario en linux, tambien cabe recordar que hay que tener en cuenta el archivo bash.bashrc este tambien habria que editarlo es el archivo que arranca desde el inicio de linux, por ejemplo para agregar un path en la variable del mismo, entonces se agrega la siguiente sentencia y listo.
+
+abrirmos el archivo con vi, editamos con i, y añadimos la siguiente linea 
+
+PATH=$PATH:home/usuario/scripts
+
+todo esto grabamos y salimos.
+
+una forma de reiniciar la carga de los archivos profile es : 
+en la linea de comando es : . ./.profile se guarda la configuracion
+
+recordando el tema de las variables de entorno con el comando 
+env | less 
+
+cabe destacar que las variables de entorno se pisan si se ejecuta un script donde el script tenga el mismo nombre que la variable nombrada como variable de entorno, entonces para evitar eso se ingresa el comando "export" que sirve para redefinir la variable de entorno, por lo que en caso de no hacerlo el script se ejecutara con errores, por lo cual eso puede implicar que el texto no se vea encontrandose vacio.
+
+cabe destacar por que linux trabaja mediante entornos lo cual es impotantes para su ejecucion.
+
+para la parte aritmetica de linux y no genere concatenacion.
+es con el comando 
+expr $v1 + $v2
+alli si devuelve el resultado de manera aritmetica
+
+sino basta con simplemente usar los parentesis dobles.
+echo (($v1 + $v2))
+
+en algunas distribuciones de linux
+es con el comando "let"
+
+
+
