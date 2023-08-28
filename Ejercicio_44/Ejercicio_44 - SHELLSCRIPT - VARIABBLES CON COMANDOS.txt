@@ -1,0 +1,36 @@
+Ejercicio_44 - SHELLSCRIPT - VARIABLES CON COMANDOS
+
+SHELLSCRIPT: VARIABLES CON COMANDOS
+
+se vera la posibilidad de un reiterar el valor de un comando, con el fin de utilizarlo en otro entorno.
+
+con el fin de afianzar el concepto de presetara el siguiente ejemplo
+
+num_fich=`ls -l | wc -l` de esta manera podemos guardar el numero de ficheros en una variable 
+
+num_fich=$(ls -l | wc -l) esta es otra forma de hacerlo 
+
+con esto concluimos que podemos guardar cualquier variable con los caracteres de $() o con los ``.
+
+ejemplo de programa para contar ficheros
+
+#!/bin/bash
+
+#Este programa cuenta ficheros
+
+echo 'CONTAR FICHEROS'	
+
+echo '---------------'
+
+num_ficheros =$(ls -l | wc -l)
+
+#restar valor a num_ficheros
+num_ficheros=$(($num_ficheros - 1))
+
+directorio $(pwd)
+
+echo 'En el directorio '$directorio' hay '$num_ficheros' ficheros'
+
+recordar darle la capacidad de ejecucion con chmod u+x al archivo en cuestion 
+
+

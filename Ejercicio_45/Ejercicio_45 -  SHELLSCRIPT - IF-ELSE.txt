@@ -1,0 +1,32 @@
+Ejercicio_45 -  SHELLSCRIPT - IF-ELSE 
+
+SHELLSCRIPT: IF-ELSE 
+
+En linux una buena practica para el funcionamiento correcto del codigo en linux es que un programa siempre devuelve el codigo 0 para su correcto funcionamiento. por lo tanto una buena practica es buscar la tendencia que el programa devuelva eso entonces tenemos que buscar ese concepto en linux.
+ En caso de haber un error o warning este devolvera un codigo distinto... si queremos saber que valor devuelve entonces ejecutamos este comando "$?"
+de esta manera : echo $? y devolvera el codigo error de linux.
+tambien podemos guardarlos en una variable de la siguiente manera
+ejecutamos un script como el que hicimos en el ejercicio pasado contarficheros.sh
+y luego de eso ejecutamos "$?" este para analizar el resultado de la ejecucion.
+entonces ya teniendo el codigo en en el buffer hacemos "resultado=$?". lo que significa guardar en resultado el valor de la ejecucion, ya lo podemos usar en otro hambito.
+
+if [ condicion ] test
+	then 
+		comando a ejecutar
+fi
+
+dentro de la carpeta hay una imagen que explica la funcion del test.
+
+el comando test : nos permite analizar la funcionalidad de un comando, donde tras la realizacion de la prueba devuelvera un codigo. 
+
+ejemplo de programa ejecutable escrito en vi para la shell de linux.
+
+directorio=/home/user
+
+if [-d $directorio]
+then 
+  echo 'El directorio '$directorio' existe'
+else
+  echo 'El directorio '$directorio' no existe'
+fi
+
