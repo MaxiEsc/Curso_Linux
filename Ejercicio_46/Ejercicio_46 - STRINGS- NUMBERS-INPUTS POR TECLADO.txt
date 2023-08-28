@@ -1,0 +1,56 @@
+Ejercicio_46 - STRINGS- NUMBERS-INPUTS POR TECLADO
+
+STRINGS, NUMBERS, INPUT POR TECLADO
+
+En este caso se trabajaran los conceptos de cadenas numeros y entradas mediante el teclado, 
+recordar que test sirve para la el analisis de igualdades en linux
+cabe destacar que el if sirve para la propia shell lo interprete sin necesidad se ejecutarlo desde un fichero, si no que tambien podemos ejecutar desde la propia consola.
+
+ejemplo 
+
+if [ hola = hola ]; then echo 'son iguales'; fi;
+
+if [ 'hola a todos' = 'hola a todos' ]; then echo 'son iguales'; fi;
+
+con operaciones aritmeticas
+
+test 10 -eq 10  -> es igual
+
+test 100 -gt 10 -> es mayor que
+
+test 200 -ne 300 -> no es igual 
+
+caracteristica de peticiones de datos por teclado
+
+se utiliza el comando "read" en linux
+
+vi entrada.sh
+
+#Ejemplo de comando built-in
+
+echo 'Introduce tu nombre'
+read nombre 
+echo 'Tu nombre es '$nombre'... es correcto?'
+
+read -p 'Introduce tu apellido: ' apellido' -> nos ayuda a ahorrar lineas para nuestro porgrama.
+echo tu primer apellido es '$apellido'
+
+read -p 'coloca tu nombre, apellido y telefono: ' nombre apellido telefono'
+echo 'Te llamas $nombre $apellido' y tu telefono es: '$telefono
+
+
+
+linux tambien permite la carga de varias variables.
+ejemplo
+read v1 v2 v3 -> asi se anuncian y luego se cargan mediante la siguiente sintaxis
+10 20 30
+y luego se leen mediante la forma de siempre... comprobemoslo.
+echo $v1
+echo $v2
+echo $v3
+
+
+
+
+
+
