@@ -1,0 +1,46 @@
+Ejercicio_47 - SHELLLSCRIPT-EJERCICIO-OPERADORES
+
+SHELLLSCRIPT: EJERCICIO, OPERADORES
+
+Ejemplo practico
+
+creacion de script
+
+monitor.sh
+
+#!/bin/bash
+
+echo 'MENU PRINCIPAL'
+echo '--------------'
+echo '1 - Mostrar la fecha'
+echo '2 - Mostrar numero de usuarios del sistema'
+echo '3 - Tiempo de funcionamiento del sistema'
+echo '4 - Salir'
+echo
+
+read  -p 'Ingrese la opcion deseada: ' opcion
+
+if [$opcion -eq 4] || [$opcion -gt 4]
+then
+ exit
+elif [$opcion -eq 1]
+then
+ date
+elif [$opcion -eq 2]
+then
+ cat /etc/passwd | wc l
+else
+ uptime
+fi
+
+
+
+
+
+
+
+
+
+
+
+                
