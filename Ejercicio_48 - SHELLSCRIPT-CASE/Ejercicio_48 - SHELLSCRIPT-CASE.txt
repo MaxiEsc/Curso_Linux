@@ -1,0 +1,63 @@
+Ejercicio_48 - SHELLSCRIPT-CASE 
+
+SHELLSCRIPT: CASE 
+
+Continuamos con la parte practica del curso de linux, en este caso vamos a ver la clausula CASE.
+
+modificamos el programa :
+
+monitor.sh
+
+#!/bin/bash
+
+echo 'MENU PRINCIPAL'
+echo '--------------'
+echo '1 - Mostrar la fecha'
+echo '2 - Mostrar numero de usuarios del sistema'
+echo '3 - Tiempo de funcionamiento del sistema'
+echo '4 - Salir'
+echo
+
+read  -p 'Ingrese la opcion deseada: ' opcion
+
+case $opcion in 
+1) 
+  date
+  ;;
+2)
+  cat /etc/passwd | wc -l
+  ;;
+3)
+  uptime
+  ;;
+4)
+  exit
+*)
+  echo 'Introduzca un valor entre 1 y 4'
+  ;;
+esac
+
+tanbien se crea un programa nuevo llamado caracteres.sh
+
+#!/bin/bash
+
+read -p 'Introduce una palabra o numero: ' palabra
+
+case $palabra in
+   [ABC])
+       echo 'Es una palabra A B o C'
+        ;;
+   [0-9])
+       echo 'Es un numero entre 0 y 9'
+        ;;
+   x|X)
+       echo 'es un caracter x mayuscula o minuscula'
+        ;;
+   *a) 
+       echo 'Es una palabra terninada en a'
+        ;;
+
+   
+
+
+
