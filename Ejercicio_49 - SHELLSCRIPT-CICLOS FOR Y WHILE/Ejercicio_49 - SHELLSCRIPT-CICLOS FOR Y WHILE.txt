@@ -1,0 +1,41 @@
+Ejercicio_49 -  SHELLSCRIPT-CICLOS FOR Y WHILE
+
+SHELLSCRIPT: CICLOS FOR Y WHILE
+
+En esta seccion haremos una practica con todo los conceptos de for y while en los programas de linux
+
+practicamos el concepto de for en la shell, con este ejemplo 
+
+for f in a b c
+>do
+> echo 'La variable es : ' $f
+>done
+
+tambien sirve para contar los programas, por ejemplo;
+
+en el directorio escribimos en la consola que deseamos contar 
+con la instruccion: 
+for f in * 
+>do
+> echo 'La ficheros son : ' $f
+>done
+
+vamos con el programa 
+
+usuarios.sh
+
+for nombre in $(cat /etc/passwd | cut -d: -f1)
+do
+ echo 'Nombre de usuario: '
+done
+
+este programa trae todos los usuarios del sistema
+
+fin del for
+
+concepto while, como en programacion basica este realiza tareas de ejecucion hasta que se cumpla una condicion.
+
+
+
+contador.sh 
+
